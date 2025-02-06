@@ -1,0 +1,15 @@
+certifi
+chardet
+easyocr
+idna
+inference-sdk  # No version pin, pip will install a compatible version
+json5
+numpy
+opencv-python
+Pillow
+pytesseract
+requests
+roboflow
+urllib3
+ultralytics
+gradio

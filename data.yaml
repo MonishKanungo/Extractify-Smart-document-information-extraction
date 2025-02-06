@@ -1,0 +1,22 @@
+# Define paths to dataset
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+# Number of classes
+nc: 4
+
+# Class names (ensure order matches labels in annotation files)
+names:
+  0: Aadhaar
+  1: Driving-Licence
+  2: Pan-Card
+  3: Voter-ID
+
+# Roboflow dataset details (optional, remove if not using Roboflow)
+roboflow:
+  workspace: "ishaque-po4hy"
+  project: "pan-model"
+  version: 2
+  license: "CC BY 4.0"
+  url: "https://universe.roboflow.com/ishaque-po4hy/pan-model/dataset/2"

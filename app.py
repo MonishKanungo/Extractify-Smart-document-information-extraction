@@ -3,20 +3,19 @@ import easyocr
 import numpy as np
 import re
 import json
-from roboflow import Roboflow  # Import Roboflow
+from roboflow import Roboflow  
 from ultralytics import YOLO
 import gradio as gr
 
-# Initialize EasyOCR for text extraction (English)
 reader = easyocr.Reader(['en'])
 
 # Initialize Roboflow client
-rf = Roboflow(api_key="sFM2tWZMm4xZoYxI46WJ")  # Replace with your Roboflow API key
-project = rf.workspace().project("annotation-xsy5d")  # Replace with your project ID
-aadhaar_model = project.version(3).model  # Replace with your model version
+rf = Roboflow(api_key="sFM2tWZMm4xZoYxI46WJ")  
+project = rf.workspace().project("annotation-xsy5d")  
+aadhaar_model = project.version(3).model 
 
-# Load YOLO models for document detection and PAN card extraction
-document_model = YOLO("best.pt")  # Model for document type detection
+
+document_model = YOLO("best.pt")  n
 pan_model = YOLO("pan.pt")  # Model for PAN card extraction
 
 # Function to detect document type

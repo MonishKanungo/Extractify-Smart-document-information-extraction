@@ -20,4 +20,4 @@ for r in results:
         print(f"🔍 Detected Document: {class_name} (Confidence: {confidence:.2f})")
 
 if len(results) == 0:
-    print("⚠️ No document detected. Try a clearer image.")
+    print(" No document detected. Try a clearer image.")
